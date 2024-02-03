@@ -40,3 +40,8 @@ img{
     font-size: small;
     color: #777777;
 }
+.card-text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

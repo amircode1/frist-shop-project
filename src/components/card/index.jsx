@@ -13,7 +13,7 @@ const Card = (props) =>{
             </div>
             <div className='container-description'>
 
-                <h6>{props.ProductTitle}</h6>
+                <h6 className='card-text'>{props.ProductTitle}</h6>
                 <span className='d-inline'><FaStore/></span>
                 <p className='text-secondary m-0 d-inline'>{props.ProductPlaceStore}</p>
 
