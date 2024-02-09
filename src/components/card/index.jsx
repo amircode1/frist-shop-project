@@ -24,12 +24,15 @@ const Card = (props) =>{
                     ({props.ProductRatingCount}نظر)
                     </span></p>
                 </div>
-                
                 <div className='d-flex justify-content-between'>
                     <h3 className='d-flex mt-2'>{props.ProductPrice}<span><FiDollarSign /></span></h3>
                     <del>{props.ProductDiscount}</del>
-                    <button className='button'><span><FaPlus /></span></button>
-                    
+                    <button className='button' onClick={() => props.setBasketlist([...props.basketlist, {
+                        ProductTitle: props.ProductTitle,
+                        ProductPrice: props.ProductPrice,
+                        productid: props.productid
+                    }])}><span><FaPlus /></span></button>
+
                 </div>
             </div>
         </div>
